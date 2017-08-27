@@ -1,0 +1,11 @@
+<br>
+<h1>Books</h1>
+<p id="notice"><%= notice %></p>
+<div class="card text-center">
+  <div class="card-body">
+    <h4 class="card-title"><%= @book.title %></h4>
+    <p class="card-text"><%= @book.desc %></p>
+    <%= link_to icon('arrow-left', 'Back'), books_path, class: 'btn btn-info' %>
+    <%= link_to icon('pencil', 'Edit'), edit_book_path(@book), class: 'btn btn-primary' %>
+  </div>
+</div>
